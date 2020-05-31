@@ -1,0 +1,1 @@
+This will be only used for smaller thing like redirect functions to another website etc.

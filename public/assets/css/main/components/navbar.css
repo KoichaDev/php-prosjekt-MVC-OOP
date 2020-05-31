@@ -1,0 +1,48 @@
+.Navbar {
+  background-color: #46ACC2;
+  display: flex;
+  padding: 1.5rem;
+  font-family: sans-serif;
+  color: white;
+}
+
+.Navbar__Link {
+    text-decoration: none;
+    color: white;
+    padding: 0 1rem;
+}
+
+.Navbar__Items {
+  display: flex;
+}
+
+.Navbar__Items--right {
+  margin-left:auto;
+  padding: 0 1rem;
+}
+
+.Navbar__Link-toggle {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .Navbar__Items,
+  .Navbar {
+    flex-direction: column;
+  }
+  .Navbar__Items {
+    display:none;
+  }
+  .Navbar__Items--right {
+    margin-left:0;
+  }
+  .Navbar__ToggleShow {
+    display: flex;
+  }
+  .Navbar__Link-toggle {
+    align-self: flex-end;
+    display: initial;
+    position: absolute;
+    cursor: pointer;
+   } 
+}

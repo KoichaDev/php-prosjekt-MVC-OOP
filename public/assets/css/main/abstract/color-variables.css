@@ -1,0 +1,18 @@
+:root {
+   --ff-head: "Merriweather", serif;
+   --ff-body: "Muli", sans-serif;
+   --fs-body: 1.8rem;
+   --fs-h2: 4rem;
+   --fs-h4: 2.4rem;
+   --fs-h5: 1.8rem;
+   --clr-head: hsla(208, 11%, 15%, 1);
+   --clr-body: hsla(208, 9%, 31%, 0.8);
+   --clr-accent: hsla(216, 97%, 61%, 1);
+
+   /* Widget Card News feed */
+    --gradient-color: linear-gradient(
+    90deg,
+    rgb(255, 88, 88, 0.8),
+    rgb(240, 152, 25, 0.8)
+  );
+}

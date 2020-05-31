@@ -1,0 +1,91 @@
+.post {
+  margin: 50px auto;
+  padding: 50px 40px;
+  width: 100%;
+  max-width: 800px;
+  min-width: 480px;
+  background: #fff;
+  font-family: "Asap", sans-serif;
+}
+
+.post h3 {
+  margin: 0px 0px 20px 0px;
+  font-size: 30px;
+  color: #2e3641;
+}
+.post input[type="text"] {
+  padding-left: 15px;
+  width: 100%;
+  height: 45px;
+  border: 1px solid #c1cfd9;
+  box-shadow: inset 0px 0px 3px #c1cfd9;
+  outline: none;
+  font-family: "Bree Serif", serif;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.post .editor {
+  min-height: 300px;
+  width: 100%;
+  resize: none;
+  border: 1px solid #c1cfd9;
+  box-shadow: inset 0px 0px 3px #c1cfd9;
+  outline: none;
+  padding: 15px;
+  margin-bottom: 20px;
+  position: relative;
+}
+.post .editor .saved {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: block;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  background: #c1cfd9;
+  font-weight: bold;
+  border-top-left-radius: 15px;
+}
+
+.post .buttons button {
+  width: 120px;
+  height: 45px;
+  border: none;
+  color: #fff;
+  text-transform: uppercase;
+  outline: none;
+  margin-right: 20px;
+  font-weight: bold;
+  background: #c1cfd9;
+  text-decoration: none;
+}
+.post .buttons button:last-of-type {
+  margin-right: 0px;
+  background: green;
+}
+.post .buttons button:last-of-type:hover {
+    cursor: pointer;
+  background: rgb(0, 206, 0);
+}
+.post .buttons button:active {
+  box-shadow: inset 0px 4px rgba(0, 0, 0, 0.05);
+}
+.post .buttons button:hover {
+    cursor: pointer;
+  background: #d1dbe3;
+}
+.post .buttons:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.post:after {
+  content: "";
+  display: block;
+  clear: both;
+}

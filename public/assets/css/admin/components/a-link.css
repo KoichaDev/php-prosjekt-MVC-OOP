@@ -1,0 +1,13 @@
+a {
+  text-decoration: none;
+}
+
+.btn {
+	border-radius: 1px solid black; 
+	background: rgb(0, 206, 0);
+}
+
+.btn:hover {
+	cursor: pointer;
+}
+

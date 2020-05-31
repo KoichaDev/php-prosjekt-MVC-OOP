@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald&display=swap");
+@import './../abstract/color-variables.css';
+
+.card-widget {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 2px 0.8rem 1rem rgba(0, 0, 0, 0.05);
+  background-color: #fff;
+  font-size: 1.6rem;
+  font-family: "Open Sans", sans-serif;
+  color: #333;
+  padding: 0 1.5rem;
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.card-widget__card-image {
+  height: 25rem;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.card-widget__background-image {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url("https://images.unsplash.com/photo-1584565168909-c8d22bdacf4c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=80")
+    center no-repeat;
+  background-size: cover;
+  z-index: -1;
+  transition: transform 5s;
+}
+
+.card:hover .card-widget__background-image {
+  transform: scale(1.2);
+}
+.card-widget__publication-details {
+  width: 100%;
+  height: 100%;
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 1rem;
+}
+
+.card-widget__publication-details i {
+  margin-right: 1rem;
+}
+
+.card-widget__author {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+  transition: all 0.5s 0.2s;
+}
+.card-widget__author:hover {
+  color: rgba(255, 255, 255, 0.75);
+}
+.card-widget__date {
+  display: block;
+}
+
+.card-widget__card-content {
+  background-color: #fff;
+  padding: 2rem 3rem;
+  position: relative;
+}
+
+.card-widget__title,
+.card-widget__subtitle {
+  font-family: "Oswald", sans-serif;
+}
+
+.card-widget__title {
+  font-size: 3rem;
+  line-height: 1;
+}
+
+.card-widget__subtitle {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #a2a2a2;
+  text-decoration: none;
+  margin: 1rem 0 1.5rem 0;
+}
+
+.card-widget__description {
+  position: relative;
+  line-height: 1.5;
+}
+.card-widget__description::first-letter {
+  margin-left: 1rem;
+}
+
+.card-widget__description::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0.5rem;
+  height: 2.5rem;
+  border-radius: 2rem;
+}
+
+.card-widget__cta {
+  text-align: right;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+.card-widget__cta a {
+  -webkit-background-clip: text;
+  color: transparent;
+  position: relative;
+}
+
+.card-widget__cta a::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -0.5rem;
+  width: 100%;
+  height: 3px;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.5s;
+}
+
+.card-widget__cta a:hover::before {
+  transform: scaleX(1);
+}
+
+@media screen and (min-width: 600px) {
+  .card {
+    flex-direction: row;
+    max-width: 75rem;
+  }
+  .card-widget__card-image {
+    height: auto;
+    flex-basis: 40%;
+  }
+  .card-widget__card-content {
+    flex-basis: 60%;
+  }
+  .card-widget__publication-details {
+    transform: translateX(-100%);
+    transition: transform 0.5s;
+  }
+  .card:hover .card-widget__publication-details {
+    transform: translateX(0);
+  }
+  .card-widget__author {
+    transform: translateY(-3rem);
+    opacity: 0;
+    transition-delay: 0.2s;
+  }
+  .card-widget__date {
+    transform: translateY(3rem);
+    opacity: 0;
+    transition: all 0.5s 0.2s;
+  }
+  .card:hover .card-widget__author,
+  .card:hover .card-widget__date {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

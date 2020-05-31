@@ -1,0 +1,48 @@
+input[type="submit"],
+input[type="checkbox"] 
+input[type="button"] {
+    cursor: pointer;
+}
+
+.login-form {
+  background:#fff;
+  padding: 1.25rem;
+  padding-top: 2rem;
+  width: 30rem;
+  margin: 3rem auto;
+}
+
+input {
+  width:100%;
+  background:#f5f5f5;
+  border:0;
+  padding:20px;
+  border-radius:0px;
+  margin-bottom:10px;
+  border:1px solid #eee;
+}
+
+.btn-login {
+  width: 35%;
+  padding:10px;
+  border:0;
+  background:rgb(69, 187, 69);
+  font-size:1.2em;
+  color: white;
+}
+
+.btn-register {
+  width: 45%;
+  padding:10px;
+  border:0;
+  background: blue;
+  font-size:1.2em;
+  color: white;
+}
+
+
+
+.btn:active {
+  top:3px;
+  box-shadow:none;
+}

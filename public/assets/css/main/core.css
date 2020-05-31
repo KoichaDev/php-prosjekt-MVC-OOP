@@ -1,0 +1,46 @@
+@charset "utf-8";
+
+/* ABSTRACT 
+ * Helper functions and non–output snippets only (font-face imports, reusable mixins, global variables, colors, etc.)
+ * Variables for the components 
+ */
+@import './abstract/color-variables.css';
+@import './abstract/typography.css';
+
+/* BASE
+ * Global styles are imported here
+ * A custom reset file can be added to override normalize
+ * Typography (h1-6, p, a, blockquote, etc.) should be included
+ * Globally defined tags (body, main, article, div, etc.) should also be included
+ */
+@import './base/reset.css';
+
+/*
+ * COMPONENTS 
+ * Micro level reusable components are imported here
+ * Each component does one thing and one thing only
+ * Components are re-usable across the project
+ * Components are independent
+ */
+ @import './components/a-link.css';
+ @import './components/card.css';
+ @import './components/comments.css';
+ @import './components/event-card.css';
+ @import './components/login.css';
+ @import './components/model.css';
+ @import './components/navbar.css';
+ @import './components/register.css';
+ @import './components/sidebar.css';
+ @import './components/table.css';
+ @import './components/widget-card.css';
+
+/* LAYOUTS 
+ * Unique combinations of components and base styles are imported here
+ * Each stylesheet contains all component style overrides, and specific layout only attributes
+ */
+ 
+@import './layouts/aside.css';
+@import './layouts/body.css';
+@import './layouts/grid.css';
+@import './layouts/header.css';
+@import './layouts/main.css';
